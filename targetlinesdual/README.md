@@ -14,8 +14,8 @@ Settings retain the original action filter and the selected-overlay enabled/colo
 
 The upstream Alliance-filter expression is deliberately preserved, including its existing typo: with ordinary settings, Alliance behaves like Party. Fixing that unrelated behavior would change the action lines this build is intended to preserve.
 
-Safety changes and offline checks are documented in `PATCH_SUMMARY.md` and the accompanying `AUDIT-0.1.1-test.md`. Original action colors, timing and valid-geometry output are preserved in tested cases; invalid-entity, death, clipping-error and session cleanup behavior is intentionally corrected.
+Safety changes and offline-check scope are summarized in `PATCH_SUMMARY.md`. Original action colors, timing and valid-geometry output are preserved in tested cases; invalid-entity, death, clipping-error and session cleanup behavior is intentionally corrected.
 
 The renderer inherits depth-disabled drawing, so arcs may overlay world geometry. It also retains upstream viewport caching and clipping limitations. Native pointer safety, driver/device-loss behavior and visual compatibility still require client validation. If vertex-buffer creation fails, rendering remains hidden until addon reload.
 
-Original author: Jyouya. The pinned source tree did not include a license file. Confirm redistribution permission before publishing the fork. No packet sending/injection, gameplay automation, target modification or input simulation is implemented.
+Original author: Will / Jyouya. The pinned source tree did not include a license file. On September 17, 2026, Jyouya gave SHYNX explicit written permission to fork TargetLines. No packet sending/injection, gameplay automation, target modification or input simulation is implemented.
