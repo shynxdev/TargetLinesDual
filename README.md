@@ -30,11 +30,13 @@ See `targetlinesdual/PATCH_SUMMARY.md` for the detailed scoped changes.
 
 ## Source layout
 
-The exact `0.1.1-test` addon source from the tested ZIP is kept under:
+The `0.1.1-test` addon source content from the tested ZIP is kept under:
 
 `targetlinesdual/`
 
 The directory name should remain `targetlinesdual` when installed in an authorized Ashita environment.
+
+Git normalized CRLF line endings to LF in two text files during commit; the Lua/text content is otherwise unchanged from the tested package.
 
 ## Attribution and permission
 
