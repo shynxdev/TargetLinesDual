@@ -1,6 +1,6 @@
 # TargetLinesDual 0.1.1-test — changes from 0.1.0
 
-Applied `01-cyan-only.patch`, `02-renderer-safety.patch`, and `03-lifecycle-safety.patch`, in that order, to a fresh copy of `audit-input/targetlinesdual`. Neither the original ZIP nor `audit-input` was changed. The new source is under `0.1.1-test-output/targetlinesdual`.
+Applied `01-cyan-only.patch`, `02-renderer-safety.patch`, and `03-lifecycle-safety.patch`, in that order, to a fresh copy of the audited 0.1.0 candidate. The tested 0.1.1-test source published in this repository is under `targetlinesdual/`.
 
 ## Scope correction
 
@@ -31,4 +31,4 @@ Original incoming action ID resolution still has a bounded entity-table fallback
 
 The original viewport cache, broad endpoint culling, one-endpoint clipping approach and depth-disabled drawing are not redesigned. These are inherited visual/integration limitations, disclosed in the audit. An arbitrary plausible nonzero pointer can still be unmapped; sanity/identity checks do not prove native memory safety. No live client or staff approval is claimed.
 
-The cumulative `TargetLinesDual-0.1.0-to-0.1.1-test.patch` covers Lua changes from the untouched candidate. The three earlier review patches alone do not include the further corrections described above. Use the complete packaged source for this version.
+The complete published 0.1.1-test source includes all corrections described above. The three earlier review patches alone do not include the further refinements made during the final audit, so use this repository's complete source when reviewing this version.
